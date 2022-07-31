@@ -1,0 +1,12 @@
+rootProject.name = "ScreenPicturePageTestApp"
+include ':app'
+
+include ':torang_core'
+project(':torang_core').projectDir = new File('../../TorangCore/torang_core')
+include ':torangimageloader'
+project(':torangimageloader').projectDir = new File('../../TorangImageLoader/torangimageloader')
+include ':TorangRepository'
+project(':TorangRepository').projectDir = new File('../../TorangRepository')
+
+include ':screen_picturepage'
+project(':screen_picturepage').projectDir = new File('../../TorangScreenPicturePage/screen_picturepage')

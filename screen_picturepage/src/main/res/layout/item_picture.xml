@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable
+            name="picture"
+            type="com.example.torang_core.data.model.Picture" />
+    </data>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/fl_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_picture"
+            loadImage="@{picture.picture_url}"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+    </FrameLayout>
+</layout>
